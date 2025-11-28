@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpMap - Ізгі Істер Картасы | NeoCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header id="mainHeader">
+        <div class="container">
+            <h1><a href="index.html">HelpMap</a></h1>
+            <nav>
+                <ul>
+                    <li class="active-nav"><a href="index.html#about">Жоба туралы</a></li>
+                    <li><a href="index.html#features">Мүмкіндіктер</a></li>
+                    <li><a href="forum.html">Форум</a></li> 
+                    <li><a href="reviews.html">Пікірлер</a></li> 
+                    <li><a href="chat.html">Чаттар</a></li>
+                    <li><a href="index.html#news">Жаңалықтар</a></li>
+                    <li><a href="index.html#stats">Нәтижелер</a></li>
+                    <li><a href="index.html#map">Карта</a></li>
+                    <li><a href="index.html#contact">Байланыс</a></li>
+                    
+                    <li><a href="register.html">Тіркелу</a></li>
+                    <li><a href="login.html">Кіру</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <div class="user-controls">
+                <div class="user-account">
+                    <i class="fas fa-user-circle"></i>
+                    <a href="login.html" id="userLoginTrigger">Қонақ</a> 
+                    <a href="profile.html" id="profileLink" style="display:none;"></a>
+                </div>
+                <button id="modeToggle" class="mode-toggle-btn"><i class="fas fa-moon"></i> Қараңғы Режим</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section section-padding">
+            <div class="container hero-content-grid">
+                <div class="hero-content animate-on-scroll">
+                    <h2>Көмекке мұқтаждар мен Еріктілерді байланыстыратын карта</h2>
+                    <p>HelpMap – бұл нақты уақыт режимінде көмекке мұқтаж адамдарды тауып, оларға қол ұшын созуға дайын еріктілерді біріктіретін цифрлық шешім.</p>
+                    <a href="register.html" id="registerBtn" class="main-btn primary-btn">Бастау (Тіркелу)</a>
+                </div>
+                <div class="hero-image-placeholder animate-on-scroll">
+                    <i class="fas fa-map-marked-alt fa-5x"></i>
+                    <p>Интерактивті карта</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Жоба туралы</h2>
+                <div class="about-content animate-on-scroll">
+                    <p>Біздің миссиямыз – Қазақстанның әрбір азаматына қажетті көмекті тез және оңай табуға мүмкіндік беру. Уақытты ысырап ететін хабарландырулар мен іздеулердің орнына, біз мәселе мен шешімді бір жерде біріктіреміз.</p>
+                    <button id="showDetailsBtn" class="secondary-btn">Толығырақ оқу</button>
+                    <div id="fullDetails" style="display:none;">
+                        <p>Біздің платформа геолокацияны, жедел хабарлама алмасуды және рейтингтік жүйені пайдаланады, бұл әрбір көмектің мақсатты және тиімді болуын қамтамасыз етеді. Біз тек қосымша емес, біз – сенімді қауымдастықпыз.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="features" class="features-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Мүмкіндіктер</h2>
+                <div class="features-grid">
+                    
+                    <div class="feature-item animate-on-scroll">
+                        <i class="fas fa-map-pin fa-3x"></i>
+                        <h3>Нақты Уақыттағы Карта</h3>
+                        <p>Көмек сұраныстарын және жақын маңдағы еріктілерді бірден көру.</p>
+                    </div>
+                    
+                    <div class="feature-item animate-on-scroll">
+                        <i class="fas fa-comments fa-3x"></i>
+                        <h3>Жедел Чат</h3>
+                        <p>Көмекке мұқтаж және ерікті арасында тікелей, қауіпсіз байланыс орнату.</p>
+                    </div>
+                    
+                    <div class="feature-item animate-on-scroll">
+                        <i class="fas fa-star fa-3x"></i>
+                        <h3>Рейтинг Жүйесі</h3>
+                        <p>Еріктілердің сенімділігін және жұмыс сапасын бағалау.</p>
+                    </div>
+                    
+                    <div class="feature-item animate-on-scroll">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Қауіпсіздік</h3>
+                        <p>Барлық қолданушылар мен сұраныстарды модерациялау арқылы қауіпсіздікті қамтамасыз ету.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="stats" class="stats-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Нәтижелер</h2>
+                <div class="stats-grid">
+                    <div class="stat-item animate-on-scroll">
+                        <i class="fas fa-users fa-2x"></i>
+                        <p class="counter" data-target="15000">0</p>
+                        <h4>Тіркелген Қолданушылар</h4>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <i class="fas fa-handshake fa-2x"></i>
+                        <p class="counter" data-target="7500">0</p>
+                        <h4>Сәтті Көрсетілген Көмек</h4>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p class="counter" data-target="150">0</p>
+                        <h4>Қалалар мен Ауылдар</h4>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <i class="fas fa-clock fa-2x"></i>
+                        <p class="counter" data-target="120000">0</p>
+                        <h4>Ерікті Сағаттар</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="news" class="news-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Жаңалықтар & Оқиғалар</h2>
+                <div class="carousel-container animate-on-scroll">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track" id="newsCarousel">
+                            <li class="news-item current-slide">
+                                <h3>Еріктілер Форумы</h3>
+                                <p>Алматыда еріктілердің қатысуымен ірі форум өтті. Жаңа бастамалар талқыланды.</p>
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> 10 Қазан, 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <h3>Ауылдық жерлерді Қамту</h3>
+                                <p>Бағдарламаның 50 жаңа ауылды қамтуы арқасында көмек жеделдеді.</p>
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> 28 Қыркүйек, 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <h3>Жаңа Чат Функциясы</h3>
+                                <p>Қолданушылардың қауіпсіздігін арттыру үшін чатқа шифрлау қосылды.</p>
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> 15 Қыркүйек, 2025</span>
+                            </li>
+                            <li class="news-item">
+                                <h3>Жаңа Қауымдастық Форумы</h3>
+                                <p>Біздің платформада енді көмек туралы сұрақтар қоюға және талқылауға арналған форум бар.</p>
+                                <span class="news-date"><i class="fas fa-calendar-alt"></i> 5 Қыркүйек, 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                    <div class="carousel-indicators-container" id="indicatorsContainer"></div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="map" class="map-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Интерактивті Көмек Картасы</h2>
+                <div class="map-placeholder animate-on-scroll">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3093282210798!2d76.92087532321415!3d43.23724813583196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369d784a0c87f%3A0x8670c5e7512f7188!2sAlmaty%2C%20Kazakhstan!5e0!3m2!1sen!2skz!4v1700000000000!5m2!1sen!2skz" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p class="map-description">Бұл картада сіз көмек сұраныстарының нақты уақыттағы орналасқан жерін және жақын маңдағы еріктілерді көре аласыз (Демо-нұсқа).</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Байланыс және AI көмегі</h2>
+                <p class="contact-subtitle animate-on-scroll">Сұранысыңызды жіберіңіз немесе AI-ға демо-сұрақ қойыңыз.</p>
+                <div class="contact-form-container register-card animate-on-scroll">
+                    <form id="aiDemoForm" class="contact-form">
+                        <input type="text" id="name" placeholder="Аты-жөні" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <select id="requestType" required>
+                            <option value="">Сұраныс түрін таңдаңыз</option>
+                            <option value="help">Маған көмек керек</option>
+                            <option value="volunteer">Мен көмектесе аламын (Еріктімін)</option>
+                            <option value="other">Басқа</option>
+                            <option value="demo">AI демонстрациясы</option>
+                        </select>
+                        <textarea id="message" placeholder="Сипаттаңыз: Қандай көмек керек/қандай көмек бере аласыз?" rows="4" required></textarea>
+                        <button type="submit" class="main-btn submit-btn">Сұранысты жіберу</button>
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 HelpMap (NeoCare командасы). Барлық құқықтар қорғалған.</p>
+            <p>Байланыс: info@helpmap.kz</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Жоғарыға оралу"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="api-config.js"></script>
+    <script src="animations-manager.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
